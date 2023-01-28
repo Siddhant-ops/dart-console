@@ -1,3 +1,3 @@
-int calculate() {
-  return 6 * 7;
-}
+library console_project_one;
+
+export 'src/calculate.dart';
