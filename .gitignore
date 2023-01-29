@@ -3,3 +3,9 @@
 .dart_tool/
 .vscode
 pubspec.lock
+
+#compiled output
+*.aot
+*.dill
+*.exe
+*.jit

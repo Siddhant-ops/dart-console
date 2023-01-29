@@ -86,3 +86,37 @@ devtools --port <port_number>
 ```
  dart run --observe --pause-isolates-on-start
 ```
+
+### running code from source using JIT compiler
+
+```
+dart compile kernel <file_path>.dart
+dart run <file_path>.dll
+```
+
+### running code from source using AOT compiler
+
+```
+dart compile exe <file_path>.dart
+dart run <file_path>.exe
+```
+
+### to time the execution of a program, use the following command
+
+```
+Measure-Command { dart run }
+```
+
+### creating a jit-snapshot
+
+```
+dart compile jit-snapshot <file_path>.dart
+dart run <file_path>.jit
+```
+
+### creating a aot-snapshot
+
+```
+dart compile aot-snapshot <file_path>.dart
+dartaotruntime run <file_path>.aot
+```
